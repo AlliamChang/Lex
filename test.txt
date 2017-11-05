@@ -1,0 +1,4 @@
+int integer = 123
+float decimal = 123.123
+for(int i = 0; i < integer; i ++)
+	decimal = i + decimal
