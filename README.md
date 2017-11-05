@@ -1,4 +1,5 @@
 # 词法分析器实验报告
+* git: [https://github.com/AlliamChang/Lex](https://github.com/AlliamChang/Lex)
 
 ## 1.实验目的
 模仿Lex工具，自己编写一个词法分析器生成工具，更好地理解编译原理
@@ -21,6 +22,19 @@
 * DFA: 采用二维数组驱动，竖轴表示状态号，横轴表示边名，其值等于ASCII码的值
 
 ## 6.重要数据结构
+* lex文件结构:
+
+```
+%{
+/*直接复制加入Lexer头部*/
+%}
+/*regulars*/
+%%
+/*rules*/
+%%
+/*subroutines(用户自定义的子程序，会直接复制进Lexer)*/
+```
+
 * NFA结点: 
 	![](image/nfa节点.png)
 * NFA结构体:
